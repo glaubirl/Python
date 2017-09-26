@@ -1,0 +1,79 @@
+print('\n\nEXERCICIO 1\n')
+print('--------------------------------------\n')
+valor_1 = int(input ('insira um valor: '))
+valor_2 = int(input ('insira outro valor: '))
+print ('SOMA:', valor_1 + valor_2)
+
+
+print('\n\nEXERCICIO 2\n')
+print('--------------------------------------\n')
+metro_1 = int(input ('insira um valor em metros para transformar em milimetros: '))
+print (metro_1 * 1000, 'milimetros')
+
+
+print('\n\nEXERCICIO 3\n')
+print('--------------------------------------\n')
+dia = int(input ('Dia(s): '))
+hora = int(input ('Hora(s): '))
+minuto = int(input ('Minuto(s): '))
+segundos = int(input ('Segundo(s)' ))
+print ((dia * 24 * 3600) + (hora * 3600) + (minuto * 60) + (segundos))
+
+
+print('\n\nEXERCICIO 4\n')
+print('--------------------------------------\n')
+salario = int(input ('Digite o valor do salário: '))
+aumento = int(input ('Digite em porcentagem o valor do aumento: '))
+novo_salario = salario * aumento/100 + salario
+print ('R$%.2f' %novo_salario)
+
+
+print('\n\nEXERCICIO 5\n')
+print('--------------------------------------\n')
+mercadoria = int(input ('Digite o valor da mercadoria: '))
+desconto = int(input ('Digite em porcentagem o valor do desconto: '))
+nova_mercadoria = mercadoria - mercadoria * (desconto/100)
+print ('R$%.2f' %nova_mercadoria)
+
+
+print('\n\nEXERCICIO 6\n')
+print('--------------------------------------\n')
+distancia = int(input('Distância a ser percorrida: '))
+velocidade_media = int(input('Velocidade média: '))
+print ('O carro demorará ', distancia * velocidade_media)
+
+
+print('\n\nEXERCICIO 7 \n')
+print('--------------------------------------\n')
+c = float(input('Insira a temperatura: '))
+f = 9 * c / 5 + 32
+print('%.2f F' %f)
+
+
+print('\n\nEXERCICIO 8\n')
+print('--------------------------------------\n')
+f = float(input('Insira a temperatura: '))
+c = (f - 32) / 1.8
+print('%.2f C' %c)
+
+
+print('\n\nEXERCICIO 9\n')
+print('--------------------------------------\n')
+km_percorridos = int(input('Kilômetros percorridos: '))
+dias = int(input('Quantidade de dias em que o carro foi utilizado: '))
+pagar = 60 * dias + km_percorridos * 0.15
+print('O aluguel do carro custou R$%.2f' %pagar)
+
+
+print('\n\nEXERCICIO 10\n')
+print('--------------------------------------\n')
+c = float(input('Quantos cigarros você fuma?: '))
+d = float(input('Por quantos dias você fumou?: '))
+tp = (c*10)/60 /24
+print ("\nVocê perdeu %f de dias de vida :(" %tp)
+
+
+print ('\n\nEXERCICIO 11\n')
+print('--------------------------------------\n')
+numero = str(2 ** 1000000)
+print (len(numero))
