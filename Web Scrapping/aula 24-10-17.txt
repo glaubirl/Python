@@ -1,0 +1,22 @@
+Baixar raspa.zip e descompactar 
+No CMD digitar pip install requests beautifulsoup4 lxml
+https://github.com/fmasanori/treinamento
+https://www.bayerpet.com.br/caes/lista-nomes/
+Raspar os nomes de *todos* os cachorros acima
+
+import requests
+from bs4 import BeautifulSoup
+import string
+url = 'https://www.bayerpet.com.br/caes/lista-nomes/'
+
+dogs = []
+for c in string.ascii_uppercase:
+  for p in (1, 2, 3):
+
+
+**NOVO DESAFIO**
+
+https://sismpconsultapublica.mpsp.mp.br/ConsultarDistribuicao/ObterFiltrosPorMembro
+
+Mostras os promotores e seus códigos
+
