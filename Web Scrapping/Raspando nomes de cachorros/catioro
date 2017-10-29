@@ -1,0 +1,26 @@
+import requests   #É importado a API requests para que haja a função de baixar as
+#informações html do site.
+from bs4 import BeautifulSoup   #É importado o BeautifulSoup, ferramenta para scrapping
+import string   #Será utilizado funções de string para que a url do site seja
+#modificada, afim de ter dados de todas as páginas requisitadas
+url = 'https://www.bayerpet.com.br/caes/lista-nomes/'   #Endereço do site que será
+#raspado as informações.
+
+dogs = []   #Lista que conterá os nomes dos cachorros capturados do site
+for c in string.ascii_uppercase:    #A variável c terá o valor de cada item do
+#ascii_uppercase, que é uma lista do alfabeto maiúsculo
+  for p in (1, 2, 3):   #O p é uma variável com valores de 1 à 3. Caso a página
+  #não exista será retornado uma lista vazia, por causa do requests o que não
+  #trará problemas no valor da lista.
+    pg = c+'/'+str(p)   #pg terá o valor de / + o número do ciclo (valor)
+    page = requests.get(url + pg)   #Só nesta linha as informações da página são
+    #baixadas
+    print (url + pg)    #É impresso na tela a página que foi baixada pelo programa
+    soup = BeautifulSoup(page.content, 'html.parser')
+    lista = soup.find('ul', {'class':'list listNames'})
+    lista_dogs = lista.findAll('li')
+    for d in lista_dogs:
+        dogs.append(d.string)
+  
+dogs.sort()
+print (' '.join(dogs))
