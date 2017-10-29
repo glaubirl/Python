@@ -1,11 +1,5 @@
 # RASPAGEM DE DADOS - WEB SCRAPPING
 
-Referências:
-- https://imasters.com.br/desenvolvimento/aprendendo-sobre-web-scraping-em-python-utilizando-beautifulsoup/?trace=1519021197&source=single
-- https://www.crummy.com/software/BeautifulSoup/
-- https://www.vooo.pro/insights/guia-para-iniciantes-de-web-scraping-em-python-usando-beautifulsoup/
-
-
 Raspagem de dados serve para reunir informações de páginas web
 
 Para baixar dados HTML de um site é utilizado a API requests que é instalado pelo
@@ -23,3 +17,8 @@ inicial 2 representam sucesso e iniciais 4 e 5 geralmente significam erro
 
 O método content na variável cujo valor é o site (status 200) mostra toda a HTML
 do site em uma única linha.
+
+Referências:
+- https://imasters.com.br/desenvolvimento/aprendendo-sobre-web-scraping-em-python-utilizando-beautifulsoup/?trace=1519021197&source=single
+- https://www.crummy.com/software/BeautifulSoup/
+- https://www.vooo.pro/insights/guia-para-iniciantes-de-web-scraping-em-python-usando-beautifulsoup/
