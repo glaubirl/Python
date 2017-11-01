@@ -48,3 +48,12 @@ for x in westeros: print(x)
 
 #O westeros[::2] faz com que as posições printadas seja a cada duas posições.
 print(westeros[::2]
+
+'''ORGANIZAR LISTA COM SORT E SORTED'''
+#Para organizar uma lista é utilizado os comandos sorted(lista) e lista.sort()
+#O sorted é eficiente para imprimir na tela a lista organizada, porém essa
+#organização só ocorre no print, ele não organiza a lista em ordem realmente
+#Para deixar a lista em ordem crescente e deixá-la assim no restante do programa
+#é utilizado o lista.sort(), caso queira organizar em ordem decrescente só é
+#preciso colocar um parâmetro dentro do sort. Ex.: lista.sort(reverse=True)
+
