@@ -22,3 +22,5 @@ Referências:
 - https://imasters.com.br/desenvolvimento/aprendendo-sobre-web-scraping-em-python-utilizando-beautifulsoup/?trace=1519021197&source=single
 - https://www.crummy.com/software/BeautifulSoup/
 - https://www.vooo.pro/insights/guia-para-iniciantes-de-web-scraping-em-python-usando-beautifulsoup/
+- http://pythonclub.com.br/parseando-sites-com-beautifulsoup.html
+- http://mbeck.com.br/blog/info/tecnologia/usando-beautifulsoup-para-pegar-jogos-resultados-e-previsoes-do-brasileirao-2016
